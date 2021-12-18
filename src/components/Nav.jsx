@@ -77,7 +77,7 @@ export default function Nav() {
 const Container = styled.nav`
   background-color: rgba(10, 25, 47, 0.85);
   position: fixed;
-  zindex: 10;
+  z-index: 10;
   top: 0;
   left: 0;
   width: 100%;
@@ -86,7 +86,7 @@ const Container = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: "Fira Code", monospace;
+  font-family: var(--font-mono);
   box-shadow: ${({ useShadow }) =>
     useShadow ? "0 10px 30px -10px var(--navy-shadow)" : "none"};
   transition: transform 0.3s ease, box-shadow 0.3s ease, height 0.3s ease;

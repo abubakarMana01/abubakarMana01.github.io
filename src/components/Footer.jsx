@@ -20,7 +20,7 @@ const FooterContainer = styled.footer`
   a {
     color: var(--slate);
     font-size: 0.825rem;
-    font-family: "Fira Code", monospace;
+    font-family: var(--font-mono);
     transition: color 0.3s ease, transform 0.3s ease;
   }
   a:hover {

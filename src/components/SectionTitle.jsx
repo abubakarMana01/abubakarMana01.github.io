@@ -12,7 +12,7 @@ export default function SectionTitle({ text, data, orientation = "large" }) {
 const TitleSmall = styled.h2`
   text-align: center;
   font-size: clamp(1rem, 5vw, 1.2rem);
-  font-family: "Fira Code", monospace;
+  font-family: var(--font-mono);
   font-weight: 500;
   color: var(--green);
   transition: color 0.25s ease;

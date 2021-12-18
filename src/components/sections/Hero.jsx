@@ -44,7 +44,7 @@ const HeroContainer = styled.section`
 
   h1 {
     margin: 0 0px 30px 4px;
-    font-family: "Fira Code", monospace;
+    font-family: var(--font-mono);
     color: var(--green);
     font-size: 1rem;
     line-height: 1.1;
@@ -79,7 +79,7 @@ const HeroContainer = styled.section`
 
     a {
       font-size: 0.825rem;
-      font-family: "Fira Code", monospace;
+      font-family: var(--font-mono);
       font-weight: 500;
       padding: 1.25rem 1.75rem;
       transition: background-color 0.5s ease;

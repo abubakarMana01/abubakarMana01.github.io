@@ -22,10 +22,13 @@
   --green-tint: rgba(100, 255, 218, 0.4);
   --pink: #f57dff;
   --blue: #57cbff;
+
+  --font-mono: "Fira Code", monospace;
+  --font-sans: "Calibre", "Inter", -apple-system, sans-serif;
 }
 
 body {
-  font-family: "Calibre", "Inter", -apple-system, sans-serif;
+  font-family: var(--font-sans);
   color: var(--slate);
   min-height: 100vh;
   background-color: var(--navy);

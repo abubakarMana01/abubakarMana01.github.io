@@ -13,15 +13,6 @@ export default function Experiences() {
   const handleTab2 = () => {
     setActiveTab("tab2");
   };
-  const handleTab3 = () => {
-    setActiveTab("tab3");
-  };
-  const handleTab4 = () => {
-    setActiveTab("tab4");
-  };
-  const handleTab5 = () => {
-    setActiveTab("tab5");
-  };
 
   return (
     <ExperienceContainer id="experience">
@@ -34,31 +25,14 @@ export default function Experiences() {
               className={activeTab === "tab1" ? "active" : ""}
               onClick={handleTab1}
             >
-              Upstatement <span />
+              Kwilax
+              <span />
             </li>
             <li
               className={activeTab === "tab2" ? "active" : ""}
               onClick={handleTab2}
             >
-              Scout <span />
-            </li>
-            <li
-              className={activeTab === "tab3" ? "active" : ""}
-              onClick={handleTab3}
-            >
-              Apple <span />
-            </li>
-            <li
-              className={activeTab === "tab4" ? "active" : ""}
-              onClick={handleTab4}
-            >
-              Scout <span />
-            </li>
-            <li
-              className={activeTab === "tab5" ? "active" : ""}
-              onClick={handleTab5}
-            >
-              Starry <span />
+              NITDA <span />
             </li>
           </TabNav>
 
@@ -66,10 +40,11 @@ export default function Experiences() {
             {activeTab === "tab1" && (
               <Fade duration={1000}>
                 <Tab
-                  position="Software Engineer Intern"
-                  placeOfWork="NITDA"
-                  dateStart="July 2021"
-                  dateEnd="October 2021"
+                  position="Software Developer"
+                  placeOfWork="Kwilax"
+                  link="https://kwilax.com"
+                  dateStart="May 2021"
+                  dateEnd="Present"
                   roles={[
                     "Write modern, performant, maintainable code for a diverse array of client and internal projects",
                     "Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify",
@@ -85,51 +60,7 @@ export default function Experiences() {
                   placeOfWork="NITDA"
                   dateStart="July 2021"
                   dateEnd="October 2021"
-                  roles={[
-                    "Write modern, performant, maintainable code for a diverse array of client and internal projects",
-                    "Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify",
-                    "Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis",
-                  ]}
-                />
-              </Fade>
-            )}
-            {activeTab === "tab3" && (
-              <Fade>
-                <Tab
-                  position="Software Engineer Intern"
-                  placeOfWork="NITDA"
-                  dateStart="July 2021"
-                  dateEnd="October 2021"
-                  roles={[
-                    "Write modern, performant, maintainable code for a diverse array of client and internal projects",
-                    "Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify",
-                    "Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis",
-                  ]}
-                />
-              </Fade>
-            )}
-            {activeTab === "tab4" && (
-              <Fade>
-                <Tab
-                  position="Software Engineer Intern"
-                  placeOfWork="NITDA"
-                  dateStart="July 2021"
-                  dateEnd="October 2021"
-                  roles={[
-                    "Write modern, performant, maintainable code for a diverse array of client and internal projects",
-                    "Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify",
-                    "Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis",
-                  ]}
-                />
-              </Fade>
-            )}
-            {activeTab === "tab5" && (
-              <Fade>
-                <Tab
-                  position="Software Engineer Intern"
-                  placeOfWork="NITDA"
-                  dateStart="July 2021"
-                  dateEnd="October 2021"
+                  link="https://nitda.gov.ng/"
                   roles={[
                     "Write modern, performant, maintainable code for a diverse array of client and internal projects",
                     "Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify",
@@ -169,7 +100,7 @@ const TabNav = styled.ul`
     height: 40px;
     display: flex;
     align-items: center;
-    font-family: "Fira Code", monospace;
+    font-family: var(--font-mono);
     font-size: 0.8125rem;
     cursor: pointer;
     transition: background-color 0.25s ease, color 0.25s ease;

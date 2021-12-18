@@ -13,9 +13,9 @@ export default function About() {
         <ContentContainer>
           <Content>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live
+              Hello! My name is Abubakar and I enjoy creating things that live
               on the internet. My interest in web development started back in
-              2012 when I decided to try editing custom Tumblr themes — turns
+              2019 when I decided to try editing custom Tumblr themes — turns
               out hacking together a custom reblog button taught me a lot about
               HTML & CSS!
               <br />
@@ -23,8 +23,8 @@ export default function About() {
               Fast-forward to today, and I’ve had the privilege of working at an
               advertising agency, a start-up, a huge corporation, and a
               student-led design studio. My main focus these days is building
-              accessible, inclusive products and digital experiences at
-              Upstatement for a variety of clients.
+              accessible, inclusive products and digital experiences at{" "}
+              <a href="/">Upstatement</a> for a variety of clients.
               <br />
               <br />I also recently launched a course that covers everything you
               need to build a web app with the Spotify API using Node & React.
@@ -77,7 +77,7 @@ const Content = styled.article`
   ul {
     margin-top: 20px;
     font-size: 0.8125rem;
-    font-family: "Fira Code", monospace;
+    font-family: var(--font-mono);
     line-height: 1.5;
     font-weight: 500;
     display: grid;

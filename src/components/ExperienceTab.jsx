@@ -7,11 +7,12 @@ export default function Tab({
   dateStart,
   dateEnd,
   roles,
+  link = "/",
 }) {
   return (
     <Container>
       <h3>
-        {position} <span>@</span> <a href="/">{placeOfWork}</a>
+        {position} <span>@</span> <a href={link}>{placeOfWork}</a>
       </h3>
       <p>
         {dateStart} - {dateEnd}
@@ -42,7 +43,7 @@ const Container = styled.div`
   p {
     font-size: 0.8125rem;
     margin-bottom: 25px;
-    font-family: "Fira Code", monospace;
+    font-family: var(--font-mono);
   }
 `;
 

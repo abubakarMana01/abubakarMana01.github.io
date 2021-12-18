@@ -41,7 +41,7 @@ const ContactSection = styled.section`
     border-radius: 4px;
     padding: 1.25rem 1.75rem;
     font-size: 1rem;
-    font-family: "Fira Code", monospace;
+    font-family: var(--font-mono);
     line-height: 1;
     cursor: pointer;
     transition: background-color 0.3s ease;

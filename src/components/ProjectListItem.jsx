@@ -177,7 +177,7 @@ const ProjectDetails = styled.article`
   & > p {
     margin: 10px 0px;
     color: var(--green);
-    font-family: "Fira Code", monospace;
+    font-family: var(--font-mono);
     font-size: 0.8125rem;
     font-weight: 400;
   }
@@ -239,7 +239,7 @@ const ProjectDetails = styled.article`
     display: flex;
     align-items: center;
     font-size: 0.875rem;
-    font-family: "Fira Code", monsopace;
+    font-family: var(--font-mono);
     font-weight: 500;
     width: fit-content;
     margin: 25px 0 10px;

@@ -181,7 +181,7 @@ const RightContainer = styled.aside`
   transform: rotate(90deg);
 
   a {
-    font-family: "Fira Code", monospace;
+    font-family: var(--font-mono);
     letter-spacing: 2px;
     font-size: 0.775rem;
     color: var(--light-slate);
