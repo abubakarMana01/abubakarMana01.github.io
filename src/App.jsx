@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Nav from "./components/Nav";
 import About from "./components/sections/About";
 import Contact from "./components/sections/Contact";
@@ -8,7 +9,18 @@ import SideLinks from "./components/SideLinks";
 import Footer from "./components/Footer";
 
 function App() {
-  return (
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
+
+  return loading ? (
+    <div className="loadingWrapper">Loading</div>
+  ) : (
     <div className="App">
       <Nav />
 

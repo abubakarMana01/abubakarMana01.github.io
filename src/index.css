@@ -63,6 +63,13 @@ li {
   list-style-type: none;
 }
 
+.loadingWrapper {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--lightest-navy);
+}
+
 .App {
   display: flex;
   position: relative;
