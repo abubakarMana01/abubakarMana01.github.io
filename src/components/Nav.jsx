@@ -75,9 +75,9 @@ export default function Nav() {
 }
 
 const Container = styled.nav`
-  background-color: rgba(10, 25, 47, 0.85);
+  background-color: rgba(10, 25, 47, 0.95);
   position: fixed;
-  z-index: 10;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
