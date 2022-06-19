@@ -7,36 +7,39 @@ import Hero from "./components/sections/Hero";
 import Projects from "./components/sections/Projects";
 import SideLinks from "./components/SideLinks";
 import Footer from "./components/Footer";
+import IconLoader from "./components/loader";
 
 function App() {
-  const [loading, setLoading] = useState(true);
+	const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000);
-  }, []);
+	useEffect(() => {
+		setLoading(true);
+		setTimeout(() => {
+			setLoading(false);
+		}, 3000);
+	}, []);
 
-  return loading ? (
-    <div className="loadingWrapper">Loading</div>
-  ) : (
-    <div className="App">
-      <Nav />
+	return loading ? (
+		<div className="loadingWrapper">
+			<IconLoader />
+		</div>
+	) : (
+		<div className="App">
+			<Nav />
 
-      <SideLinks left />
-      {/* Content */}
-      <main>
-        <Hero />
-        <About />
-        <Experiences />
-        <Projects />
-        <Contact />
-        <Footer />
-      </main>
-      <SideLinks />
-    </div>
-  );
+			<SideLinks left />
+			{/* Content */}
+			<main>
+				<Hero />
+				<About />
+				<Experiences />
+				<Projects />
+				<Contact />
+				<Footer />
+			</main>
+			<SideLinks />
+		</div>
+	);
 }
 
 export default App;
