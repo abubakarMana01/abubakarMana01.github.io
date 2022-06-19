@@ -13,7 +13,7 @@ export default function Projects() {
 
 				<ProjectListItem
 					title="Amazon-ish"
-					about="Amazon redesign with a modern UI, complete E-Commerce functionality including Payment Processing (Stripe API) and User Authentication (Firebase)."
+					about="Amazon redesign with a modern UI, complete E-Commerce functionality including Payment Processing (Stripe API) and User Authentication."
 					technologies={["Next JS", "Framer motion", "Context API", "Stripe"]}
 					link={"https://amazon-ish-livid.vercel.app/"}
 					github={"https://github.com/abubakarMana01/amazon-ish"}
