@@ -4,7 +4,14 @@ import styled from "styled-components";
 export default function Footer() {
 	return (
 		<FooterContainer>
-			<a href="https://github.com/abubakarMana01/">
+			<a href="https://github.com/bchiang7" target="_blank" rel="noreferrer">
+				Designed by Brittany Chiang
+			</a>
+			<a
+				href="https://github.com/abubakarMana01/"
+				target="_blank"
+				rel="noreferrer"
+			>
 				Built by Yahya Mana Abubakar. {new Date().getFullYear()}
 			</a>
 		</FooterContainer>
@@ -16,6 +23,7 @@ const FooterContainer = styled.footer`
 	padding-top: 100px;
 	display: grid;
 	place-items: center;
+	gap: 0.5rem;
 
 	a {
 		color: var(--slate);
