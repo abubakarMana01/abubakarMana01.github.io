@@ -32,7 +32,6 @@ const ContactSection = styled.section`
 		text-align: center;
 		margin: 20px auto;
 		max-width: 600px;
-		font-weight: 500;
 		font-size: clamp(0.8rem, 4vw, 1rem);
 	}
 	a {

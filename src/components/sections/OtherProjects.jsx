@@ -17,7 +17,7 @@ export default function OtherProjects() {
 
 				<OtherProjectItemsContainer>
 					{noteworthyProjects.map((details, index) => (
-						<OtherProjectItem details={details} />
+						<OtherProjectItem details={details} fadeDelay={index * 100} />
 					))}
 
 					{displayMore &&
@@ -64,6 +64,7 @@ const OtherProjectItemsContainer = styled.ul`
 	margin: 50px 0px 0px;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-auto-rows: minmax(min-content, max-content);
 	gap: 1rem;
 	position: relative;
 
