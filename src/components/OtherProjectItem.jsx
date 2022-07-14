@@ -9,6 +9,7 @@ export default function OtherProjectItem({ details, fadeDelay = 100 }) {
 			style={{
 				display: "flex",
 			}}
+			triggerOnce
 		>
 			<Container>
 				<a
