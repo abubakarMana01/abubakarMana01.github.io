@@ -41,7 +41,7 @@ export default function About() {
 							<li>React.js</li>
 							<li>React Native</li>
 							<li>Node.js</li>
-							<li>Tailwind CSS</li>
+							<li>Vue.js</li>
 							<li>Firebase</li>
 							<li>MongoDB</li>
 							<li>TypeScript</li>

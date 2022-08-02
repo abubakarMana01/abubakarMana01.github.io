@@ -7,11 +7,8 @@ import Tab from "../ExperienceTab";
 export default function Experiences() {
 	const [activeTab, setActiveTab] = useState("tab1");
 
-	const handleTab1 = () => {
-		setActiveTab("tab1");
-	};
-	const handleTab2 = () => {
-		setActiveTab("tab2");
+	const handleTab = (tab) => {
+		setActiveTab(tab);
 	};
 
 	return (
@@ -23,16 +20,22 @@ export default function Experiences() {
 					<TabNav>
 						<li
 							className={activeTab === "tab1" ? "active" : ""}
-							onClick={handleTab1}
+							onClick={() => handleTab("tab1")}
 						>
 							Kwilax
 							<span />
 						</li>
 						<li
 							className={activeTab === "tab2" ? "active" : ""}
-							onClick={handleTab2}
+							onClick={() => handleTab("tab2")}
 						>
 							NITDA <span />
+						</li>
+						<li
+							className={activeTab === "tab3" ? "active" : ""}
+							onClick={() => handleTab("tab3")}
+						>
+							CCL <span />
 						</li>
 					</TabNav>
 
@@ -66,6 +69,22 @@ export default function Experiences() {
 										"Using software development frameworks, methodologies and project management tools",
 										"Using version control systems properly.",
 										"Writing and working with RESTful API’s (Application Programming Interface)'s",
+									]}
+								/>
+							</Fade>
+						)}
+						{activeTab === "tab3" && (
+							<Fade>
+								<Tab
+									position="Software Engineer Intern"
+									placeOfWork="CypherCrescent Ltd."
+									dateStart="July 2022"
+									dateEnd="Present"
+									link="https://www.cyphercrescent.com.ng/"
+									roles={[
+										"Using Vue.js to build powerful frontend user interfaces for web applications",
+										"Implementation of proper design principles",
+										"Consuming RESTful API's to add dynamic content to frontend of applications",
 									]}
 								/>
 							</Fade>
