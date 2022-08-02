@@ -5,7 +5,7 @@ import SectionTitle from "../SectionTitle";
 import Tab from "../ExperienceTab";
 
 export default function Experiences() {
-	const [activeTab, setActiveTab] = useState("tab1");
+	const [activeTab, setActiveTab] = useState("tab3");
 
 	const handleTab = (tab) => {
 		setActiveTab(tab);
